@@ -5,7 +5,7 @@ class Chartbeat
   YESTERDAY         = Time.now.to_i - 86400
   BASE_URI          = 'chartbeat.com/api'
   METHODS           = [:pages, :pathsummary, :recent, :summize, :quickstats, :toppages, :histogram, :summary]
-  DASHAPI_METHODS   = [:alerts, :snapshots, :stats, :data_series, :day_data_series]
+  DASHAPI_METHODS   = [:alerts, :snapshots, :stats, :data_series, :day_data_series, :alerts, :conversation, :snapdays, :twitterwords, :uptime]
   DEFAULT_ARG_VALS  = {:path => '/', :keys => 'n', :types => 'n', :since => YESTERDAY, 
                        :timestamp => YESTERDAY, :days => 1, :minutes => 20, :type => 'path', 
                        :breaks => 'n', :limit => 10}
